@@ -43,7 +43,7 @@ Follow these steps to create the standalone executable:
 2. Open your command prompt or terminal and run the following command:
 
 ```bash
-pyinstaller --onefile --noconsole main.py
+pyinstaller --onefile --noconsole PyWinScreenLockPrevent.py
 
 ```
 
@@ -59,10 +59,10 @@ interval: Set the interval (in seconds) between mouse cursor movements. Default 
 
 ## Future work
 The TODO list:
-- Verify EXE compatibility on laptop.
-- Enhance "Stop" button functionality.
+- Verify EXE compatibility on laptop. [✅ Alhumdulillah  work in other laptop with Youtube]
+- Enhance "Stop" button functionality. [✅]
 - Reduce EXE size (currently 68 MB), by use other lite package.
--Implement operational modes and dynamic button changes, current use for Youtube.
+- Implement operational modes and dynamic button changes, current use for Youtube.
 
 
 ## Contributing

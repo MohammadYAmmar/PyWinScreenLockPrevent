@@ -30,11 +30,11 @@ def start_lock_prevention():
                 # Simulate pressing the Escape (F) key
                 pyautogui.press('F')
 
-                # Print a message when the mouse pointer is moved
-                # print("Mouse pointer moved.")
+                # Print a message for debug
+                # print("Action happen.")
                 
                 # Sleep for the specified interval (in seconds)
-                time.sleep(interval)
+                # time.sleep(interval)
             
             except KeyboardInterrupt:
                 break
