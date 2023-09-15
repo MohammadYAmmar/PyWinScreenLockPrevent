@@ -17,9 +17,19 @@ def start_lock_prevention():
         while is_prevention_active:
             try:
                 # Move the mouse cursor slightly
-                pyautogui.move(1, 1)
-                pyautogui.move(-1, -1)
-                
+                # pyautogui.move(1, 1)
+                # pyautogui.move(50, 50)
+                # pyautogui.move(-1, -1)
+
+                # Press the spacebar key
+                # pyautogui.press('space')
+
+                # Simulate pressing the Escape (Esc) key
+                pyautogui.press('esc')
+
+                # Simulate pressing the Escape (F) key
+                pyautogui.press('F')
+
                 # Print a message when the mouse pointer is moved
                 # print("Mouse pointer moved.")
                 

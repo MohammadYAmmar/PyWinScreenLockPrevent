@@ -7,6 +7,7 @@
 - [PyWinScreenLockPrevent](#pywinscreenlockprevent)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
+  - [Future work](#future-work)
   - [Contributing](#contributing)
   - [License](#license)
 
@@ -14,7 +15,7 @@
 
 To use PyWinScreenLockPrevent, you need Python installed on your system. If you haven't already, you can download it from [Python's official website](https://www.python.org/downloads/).
 
-1. Clone or download this repository to your local machine.
+Clone or download this repository to your local machine.
 
 ```bash
 git clone https://github.com/MohammadYAmmar/PyWinScreenLockPrevent.git
@@ -27,6 +28,26 @@ Run the PyWinScreenLockPrevent.py script to launch the GUI.
 bash
 Copy code
 python PyWinScreenLockPrevent.py
+```
+
+Creating a Standalone Executable
+
+You have the option to create a standalone executable for PyWinScreenLockPrevent using PyInstaller. This will bundle your script and its dependencies into a single executable file that can be run on Windows systems without needing Python or additional dependencies.
+
+**Note**: Before proceeding, ensure that you have already installed PyInstaller by running `pip install pyinstaller`.
+
+Follow these steps to create the standalone executable:
+
+1. Navigate to the directory where your `PyWinScreenLockPrevent.py` script is located.
+
+2. Open your command prompt or terminal and run the following command:
+
+```bash
+pyinstaller --onefile --noconsole main.py
+
+```
+
+
 In the GUI, click the "Start" button to begin screen lock prevention. The mouse pointer will be moved at regular intervals to simulate user activity.
 
 To stop screen lock prevention, click the "Stop" button.
@@ -35,6 +56,14 @@ Configuration
 You can customize PyWinScreenLockPrevent by adjusting the following parameters in the PyWinScreenLockPrevent.py script:
 
 interval: Set the interval (in seconds) between mouse cursor movements. Default is 60 seconds (1 minute).
+
+## Future work
+The TODO list:
+- Verify EXE compatibility on laptop.
+- Enhance "Stop" button functionality.
+- Reduce EXE size (currently 68 MB), by use other lite package.
+-Implement operational modes and dynamic button changes, current use for Youtube.
+
 
 ## Contributing
 
