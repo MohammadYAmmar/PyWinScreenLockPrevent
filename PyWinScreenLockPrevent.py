@@ -25,16 +25,17 @@ def start_lock_prevention():
                 # pyautogui.press('space')
 
                 # Simulate pressing the Escape (Esc) key
-                pyautogui.press('esc')
+                # pyautogui.press('esc')
 
                 # Simulate pressing the Escape (F) key
                 pyautogui.press('F')
+                pyautogui.press('backspace')
 
                 # Print a message for debug
-                # print("Action happen.")
+                print("Action happen.")
                 
                 # Sleep for the specified interval (in seconds)
-                # time.sleep(interval)
+                time.sleep(interval)
             
             except KeyboardInterrupt:
                 break
@@ -75,6 +76,12 @@ stop_button.pack(pady=5)
 # Set the interval (in seconds) to move the mouse cursor
 # interval = 300  # 5 minutes
 interval = 60  # 1 minute
+
+# Define the delay in milliseconds (e.g., 3000 milliseconds = 3 seconds)
+# delay_ms = 60000
+
+# Schedule the open_window function to run after the specified delay
+# window.after(delay_ms)
 
 # Run the tkinter main loop
 window.mainloop()
